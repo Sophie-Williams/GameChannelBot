@@ -1,0 +1,31 @@
+{
+  "name": "gamechannelbot",
+  "version": "1.0.0",
+  "description": "Discord bot to manage voice channels where you don't want to be interrupted by randoms.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=html --reporter=text-summary mocha",
+    "lint": "eslint --cache ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lobabob/GameChannelBot.git"
+  },
+  "keywords": [
+    "discord",
+    "game",
+    "channels"
+  ],
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE FILE",
+  "bugs": {
+    "url": "https://github.com/lobabob/GameChannelBot/issues"
+  },
+  "homepage": "https://github.com/lobabob/GameChannelBot#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.14.1",
+    "mocha": "^6.0.0",
+    "nyc": "^13.3.0"
+  }
+}
