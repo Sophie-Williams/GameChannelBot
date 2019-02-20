@@ -4,6 +4,8 @@
   "description": "Discord bot to manage voice channels where you don't want to be interrupted by randoms.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "debug": "node --inspect-brk index.js",
     "test": "nyc --reporter=html --reporter=text-summary mocha",
     "lint": "eslint --cache ."
   },
@@ -27,5 +29,10 @@
     "eslint": "^5.14.1",
     "mocha": "^6.0.0",
     "nyc": "^13.3.0"
+  },
+  "dependencies": {
+    "@discordjs/uws": "^11.149.1",
+    "discord.js": "^11.4.2",
+    "erlpack": "github:discordapp/erlpack"
   }
 }
