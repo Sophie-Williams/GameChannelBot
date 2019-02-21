@@ -12,7 +12,7 @@ rules:
   comma-style: error
   curly: error
   dot-location: [error, property]
-  indent: [error, 2]
+  indent: [error, 2, { SwitchCase: 1 }]
   keyword-spacing: error
   linebreak-style: [error, unix]
   max-len: [warn, { code: 120, tabWidth: 2 }]
