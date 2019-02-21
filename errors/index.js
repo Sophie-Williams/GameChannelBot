@@ -7,6 +7,6 @@ const path = require('path');
 fs.readdirSync(__dirname, { withFileTypes: true })
   .filter(file => /(?<!(index))\.js$/.test(file.name) && !file.isDirectory())
   .forEach(file => {
-    const err = require(path.join(__dirname, file.name))
+    const err = require(path.join(__dirname, file.name));
     exports[err.name] = err;
   });
