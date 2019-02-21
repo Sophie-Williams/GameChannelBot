@@ -33,25 +33,30 @@ Sets the category all other bot commands will reference by default. Can be overr
 
 ### Set the default maximum number of cloned channels to create
 
-`gc!set max_clones <max_clones>`
+`gc!set max_instances <max_instances>`
 
-Sets the maximum number of clones to use when adding a channel. Can be overwridden within each `gc!add` command. Default value is `-1` which is infinite.
+Sets the maximum number of instances to use when adding a channel. Can be overwridden within each `gc!add` command. Default value is `-1` which is infinite.
 
 ### Add a voice channel to be managed by the bot
 
-`gc!add <channel_name/channel_id> <max_users> <max_clones> <category_id>`
+`gc!add <channel_name/channel_id> <max_users> <max_instances> <category_id>`
 
 Adds a channel that will be managed/cloned according to the example at the top of this README. If a channel name is provided, a new channel will be created. If a channel id is provided, then that channel will be managed by the bot.
 
 Optional
 
-- `<max_clones>`
-  - Default is the default set via `gc!set max_clones <max_clones>`. If that hasn't been set it's infinity.
+- `<max_instances>`
+  - Default is the default set via `gc!set max_instances <max_instances>`. If that hasn't been set it's infinity.
 - `<category_id>`
   - Default is the default set via `gc!set category <category_id>`. If that hasn't been set, it's whatever Discord defaults to.
 
 ### Remove a channel from being managed by the bot. Cleans up all cloned channels.
 
-`gc!delete <channel_name/channel_id>`
+`gc!rm <channel_name/channel_id>`
 
-Removes a managed voice channel and all of it's clones if they exist.
+Removes a managed voice channel and all of it's instances if they exist.
+
+
+## Credit for Icon
+
+Icon was made by [Freepik](https://www.freepik.com/) from [flaticon.com](https://www.flaticon.com/) and is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/).
