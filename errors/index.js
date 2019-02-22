@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-// Export all errors by name
+// Export all errors by name - this is only run on the first require of this module
 fs.readdirSync(__dirname, { withFileTypes: true })
   .filter(file => /(?<!(index))\.js$/.test(file.name) && !file.isDirectory())
   .forEach(file => {
