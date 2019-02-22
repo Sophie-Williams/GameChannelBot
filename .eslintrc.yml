@@ -6,6 +6,7 @@ parserOptions:
   ecmaVersion: 2018
 extends: eslint:recommended
 rules:
+  arrow-spacing: error
   brace-style: [error, 1tbs]
   comma-dangle: [error, always-multiline]
   comma-spacing: error
@@ -24,10 +25,15 @@ rules:
   no-lonely-if: error
   no-multi-spaces: error                      # This one will probably change most between projects
   no-multiple-empty-lines: [error, { max: 2, maxEOF: 1, maxBOF: 0 }]
+  no-new-func: error
+  no-new-object: error
   no-param-reassign: [error, { props: false }]
   no-shadow: [error, { allow: [err, resolve, reject] }]
+  no-template-curly-in-string: error
   no-trailing-spaces: error
+  no-useless-computed-key: error
   no-var: error
+  no-whitespace-before-property: error
   object-curly-newline: [error, { multiline: true, consistent: true }]
   object-curly-spacing: [error, always]
   prefer-const: error
@@ -43,4 +49,5 @@ rules:
   space-unary-ops: error
   spaced-comment: error
   strict: [error, global]
+  yield-star-spacing: error
   yoda: error
